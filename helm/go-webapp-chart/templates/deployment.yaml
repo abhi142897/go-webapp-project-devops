@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: go-webapp-deploy
+  name: go-webapp-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: go-webapp-deploy
+  template:
+    metadata:
+      labels:
+        app: go-webapp-deploy
+    spec:
+      containers:
+      - image: abhishek159/go-webapp-project:{{ .Values.image.tag }}
+        name: go-webapp-project
+        ports:
+        - containerPort: 8080
