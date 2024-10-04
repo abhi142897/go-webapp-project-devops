@@ -19,9 +19,14 @@ Make sure go is installed.
 Clone the repository -> cd go-webapp-project -> run #go run main.go -> access the application using http://localhost:8080/home
 
 
-Devopsified version of go-webapp-project - 
+Devopsified version of go-webapp-project: 
+
 Steps to Devopsify a project -
 
-1. Containerize the application using Dockerfile.
-2. 
-
+1) Containerize the application using Dockerfile.
+2) Build, test and push image to docker hub.
+3) Write deployment and service manifests to deploy the application on k8s cluster.
+4) Create helm chart with k8s manifests.
+5) Create .github/workflows and write ci-cd.yaml for implmenting ci.
+6) Install argocd and add a new application.
+7) Enable auto trigger in argocd.
