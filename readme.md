@@ -1,6 +1,6 @@
 # DevOpsified Project
 
-Welcome to the **DevOpsified Project**! This is a simple Go application that serves static content on port **8080**.
+Welcome to the **DevOpsified Project**! This is a simple Go application that serves static content on port **8080**. We will completely devospify the application.
 
 ## Features
 
@@ -18,4 +18,10 @@ Make sure go is installed.
 
 Clone the repository -> cd go-webapp-project -> run #go run main.go -> access the application using http://localhost:8080/home
 
+
+Devopsified version of go-webapp-project - 
+Steps to Devopsify a project -
+
+1. Containerize the application using Dockerfile.
+2. 
 
