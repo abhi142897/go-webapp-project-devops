@@ -25,7 +25,7 @@ func TestHomeHandler(t *testing.T) {
     }
 
     // Check the response body
-    expected := "Welcome to devopsified project\n"
+    expected := "Welcome to devopsified project. In this project, we will devopsify the simple Go application.\n"
     if rr.Body.String() != expected {
         t.Errorf("handler returned unexpected body: got %v want %v", rr.Body.String(), expected)
     }
