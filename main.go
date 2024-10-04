@@ -6,13 +6,16 @@ import (
 )
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
-    // Check if the request path is /home
     if r.URL.Path != "/home" {
         http.NotFound(w, r)
         return
     }
-    // Write the response
-    fmt.Fprintln(w, "Welcome to devopsified project")
+    fmt.Fprintln(w, "Welcome to devopsified project.\n")
+    fmt.Fprintln(w, "In this project, we will devopsify the simple Go application by:")
+    fmt.Fprintln(w, "- Creating a Docker image from a Dockerfile")
+    fmt.Fprintln(w, "- Deploying it to Kubernetes")
+    fmt.Fprintln(w, "- Implementing CI/CD using GitHub Actions")
+    fmt.Fprintln(w, "- Using Argo CD for continuous deployment")
 }
 
 func main() {
